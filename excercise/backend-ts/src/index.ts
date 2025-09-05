@@ -1,5 +1,7 @@
-//You can put your environment variables in a .env file
-import "dotenv/config";
+//Bun automatically loads .env files, no need for dotenv package
+//import dotenv from "dotenv";
+//https://bun.sh/guides/runtime/set-env
+
 //Hono is a web framework similar to Express
 import { Hono } from "hono";
 import jsLogger, { ILogger } from "js-logger";
@@ -26,6 +28,7 @@ interface DiceThrow {
 }
 
 // In-memory storage for dice throws
+//@todo Replace with Golem DB to practice Golem DB integration
 const data: DiceThrow[] = [];
 
 app.get("/", (c) => {

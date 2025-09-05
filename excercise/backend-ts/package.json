@@ -6,7 +6,6 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "dotenv": "^17.2.2",
     "ethers": "^6.15.0",
     "js-logger": "^1.6.1",
     "hono": "^4.9.6",

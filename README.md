@@ -48,8 +48,7 @@ To run and test the workshop project, you need to start both the **frontend** an
 3. Run:
 
    ```bash
-   bun install
-
+   bun install --frozen-lockfile
    ```
 
 4. Start the development server:
@@ -78,9 +77,13 @@ The backend server should now be running at **http://localhost:8000**.
 3. Run:
 
    ```bash
-   bun install
-
+   bun install --frozen-lockfile
    ```
+
+Option frozen lockfile ensures that the dependencies are installed exactly as specified for the example.
+It is recommended when running the example for the first time.
+
+You can skip this option and just run `bun install`
 
 4. Start the development server:
    ```bash

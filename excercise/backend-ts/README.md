@@ -31,3 +31,10 @@ bun run format
 ```bash
 bun run lint
 ```
+
+### [Optional] If you want to use node instead of bun for better interoperability and debugging support, run:
+
+```bash
+npm install
+npm run dev-node
+```
